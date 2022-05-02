@@ -1,0 +1,355 @@
+/*Mobile first*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gaegu:wght@400;700&display=swap'); 
+
+
+html {
+    /*    1rem = 16px*/
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+    /*    font-family*/
+    font-family: 'Gaegu', cursive;
+    font-weight: 300;
+    font-size: 1rem;
+    /*    line-height is 150% of the font size*/
+    line-height: 1.6;
+    color: #2C2824;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.3rem;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4 and set a standard style*/
+h1,
+h2,
+h3,
+h4 {
+    color: #2C2824;
+    /*    font-family*/
+    /*    font-weight*/;
+    line-height: 1.2;
+}
+
+/*Set a unique style to a specific tag element*/
+h1 {
+    /* margin-top: 0; */
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.953rem;
+    text-shadow: 0px 3px 6px #FFFFFF;
+    opacity: 1;
+}
+
+h2 {
+    /* margin-top: 0; */
+    font-family: 'Gaegu', cursive;
+    font-size: 1.563rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+    text-shadow: 0px 3px 6px #FFFFFF;
+    opacity: 1;
+}
+
+h3 {
+    color: white;
+    font-family: 'Gaegu', cursive;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+}
+
+h4 {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+}
+/*Interactive elements*/
+
+/* link*/
+
+a {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.563rem;
+    font-weight: normal;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #df7d2d;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffc290;
+    text-decoration: none;
+}
+
+/*button style*/
+/*solid button style*/
+.btn-primary {
+    font-size: 1.563rem;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    /*    border-radius*/
+    border-radius: 100px;
+    /*    top:1 right:3 bottom:1 left:3*/
+    /*    the size of button*/
+    padding: 1rem 3rem;
+    background-color: #2C2824;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #2C2824;
+    opacity: 0.8;
+}
+
+.navbar-toggler{
+    color:#2C2824;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #9c9791!important;
+  }
+
+.navbar-brand{
+    padding-right:16px;
+}
+.navbar-brand h1:hover {
+    color: #9c9791!important;
+}
+
+.nav-item{
+    padding-left: 16px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0px;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 8px solid;
+    border-right: 8px solid transparent;
+    border-bottom: 0;
+    border-left: 8px solid transparent;
+}
+/* custom class */
+.view{
+    background: transparent url(../img/mobile-background.jpg) no-repeat;
+    background-position-x:center;
+    background-position-y: 28px;
+    background-size: cover;
+    padding-top: 108px;
+    padding-bottom: 124px;
+}
+
+.footer{
+    padding-top: 84px;
+    padding-bottom: 110px;
+}
+
+/* home */
+.welcome-message{
+    padding-top:84px;
+}
+
+/*about*/
+.page-titles{
+    padding-top: 60px;
+    padding-bottom: 42px;
+}
+
+.page-titles-2{
+    padding-top: 60px;
+    padding-bottom: 0px;
+    line-height: 0.75;
+}
+
+.page-subtitles{
+    line-height: 0.5;
+    padding-bottom: 42px;
+}
+
+.navbar{
+    align-content: center;
+    padding: 18px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+}
+
+.nav-link{
+    color: #2C2824!important;
+        font-family: 'Gaegu', cursive;
+        font-size: 1.563rem;
+        font-weight: normal;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        opacity: 1;
+    }
+
+.navbar-brand{
+    padding-right:16px;
+}
+.nav-item{
+    padding-left: 16px;
+}
+
+@media only screen and (min-width:768px){
+    .navbar {
+        padding-left: 60px;
+        padding-top: 36px;
+
+    }
+
+}
+
+/*screen that is larger than the mobile view, Large Screen*/
+@media only screen and (min-width:992px) {
+h1,
+h2,
+h4
+{
+    color: #2C2824;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1.3rem;
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3.052rem;
+    text-shadow: 0px 3px 6px #FFFFFF;
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.953rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+    text-shadow: 0px 3px 6px #FFFFFF;
+    opacity: 1;
+}
+
+h3 {
+    color: white;
+    font-family: 'Gaegu', cursive;
+    font-size: 1.563rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+
+}
+
+h4 {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.563rem;
+    font-weight: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 1.563rem;
+
+}
+
+    .view{
+        background: transparent url(../img/desktop-background-2x.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 50px;
+        background-size: cover;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .welcome-message{
+        padding-top:20rem;
+    }
+
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .navbar{
+        padding-left: 80px;
+        padding-top: 53px;
+    }
+
+    .nav-link{
+        color: #2C2824!important;
+        font-family: 'Gaegu', cursive;
+        font-size: 1.953rem;
+        font-weight: normal;
+        margin-top: 1.563rem;
+        margin-bottom: 1.563rem;
+    }
+    .nav-link:hover {
+        color: #9c9791!important;
+      }
+
+    .navbar-brand{
+        padding-right:16px;
+    }
+    .navbar-brand h1:hover {
+        color: #9c9791!important;
+    }
+
+    .nav-item{
+        padding-left: 16px;
+    }
+
+    .dropdown-item{
+        font-family: 'Gaegu', cursive;
+        font-size: 1.25rem;
+        font-weight: normal;
+        margin-top: 1.563rem;
+        margin-bottom: 1.563rem;
+    }
+
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0px;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 8px solid;
+        border-right: 8px solid transparent;
+        border-bottom: 0;
+        border-left: 8px solid transparent;
+    }
+
+    .social {
+        color: #2C2824;
+    }
+
+    .contact-image{
+        padding-bottom: 18px;
+    }
+/* home */
+
+
+/*about*/
+
+}
